@@ -14,14 +14,20 @@
   <link rel="stylesheet" href="css/styles.css">
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/0c254f2e72.js" crossorigin="anonymous"></script>
-
+  <!-- Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- WOW -->
+  <script src="wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </head>
 
 <body>
 
   <section id="title">
 
-    <!-- Nav Bar -->
+  <!-- Nav Bar -->
 
     <div class="container-fluid">
 
@@ -33,23 +39,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
+              <a class="nav-link" href="#footer">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Download</a>
+              <a class="nav-link" href="#cta">Download</a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <!-- Title -->
+  <!-- Title -->
 
       <div class="row">
-        <div class="col-lg-6">
-          <h1>Meet new and interesting dogs nearby.</h1>
+        <div class="col-lg-6 row-col">
+          <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
           <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
           <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
         </div>
@@ -64,23 +70,22 @@
 
   </section>
 
-
   <!-- Features -->
 
   <section id="features">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-4 features">
+        <div class="col-lg-4 features wow animate__animated animate__fadeInUp">
           <i class="fas fa-check-circle fa-5x feature-icon"></i>
           <h3 class="features-h3">Easy to use.</h3>
           <p>So easy to use, even your dog could do it.</p>
         </div>
-        <div class="col-lg-4 features">
+        <div class="col-lg-4 features wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
           <i class="fas fa-bullseye fa-5x feature-icon"></i>
           <h3 class="features-h3">Elite Clientele.</h3>
           <p>We have all the dogs, the greatest dogs.</p>
         </div>
-        <div class="col-lg-4 features">
+        <div class="col-lg-4 features wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
           <i class="fas fa-heart fa-5x feature-icon"></i>
           <h3 class="features-h3">Guaranteed to work.</h3>
           <p>Find the love of your dog's life or your money back.</p>
@@ -89,7 +94,6 @@
     </div>
 
   </section>
-
 
   <!-- Testimonials -->
 
@@ -146,18 +150,17 @@
 
   <section id="pricing">
 
-    <h2>A Plan for Every Dog's Needs</h2>
+    <h2 class="section-heading pricing-h2">A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
-
     <div class="row pricing-row">
-      <div class="pricing-column col col-lg-4 col-md-6 col-sm-12">
+      <div class="pricing-column col col-lg-4 col-md-6 col-sm-12  wow animate__animated animate__fadeInUp">
         <div class="card">
           <div class="card-header">
             <h3>Chihuahua</h3>
           </div>
           <div class="card-body">
-            <h2>Free</h2>
+            <h2 class="price-text">Free</h2>
             <p>5 Matches Per Day</p>
             <p>10 Messages Per Day</p>
             <p>Unlimited App Usage</p>
@@ -165,13 +168,13 @@
           </div>
         </div>
       </div>
-      <div class="pricing-column col col-lg-4 col-md-6 col-sm-12">
+      <div class="pricing-column col col-lg-4 col-md-6 col-sm-12  wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
         <div class="card">
           <div class="card-header">
             <h3>Labrador</h3>
           </div>
           <div class="card-body">
-            <h2>$49 / mo</h2>
+            <h2 class="price-text">$49 / mo</h2>
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
             <p>Unlimited App Usage</p>
@@ -179,13 +182,13 @@
           </div>
         </div>
       </div>
-      <div class="pricing-column col col-lg-4 col-md-12 col-sm-12">
+      <div class="pricing-column col col-lg-4 col-md-12 col-sm-12 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
         <div class="card">
           <div class="card-header">
             <h3>Mastiff</h3>
           </div>
           <div class="card-body">
-            <h2>$99 / mo</h2>
+            <h2 class="price-text">$99 / mo</h2>
             <p>Pirority Listing</p>
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
@@ -195,7 +198,6 @@
         </div>
       </div>
     </div>
-
 
   </section>
 
@@ -210,7 +212,6 @@
 
   </section>
 
-
   <!-- Footer -->
 
   <footer id="footer">
@@ -219,9 +220,9 @@
     <i class="footer-icon fa-2x fab fa-facebook-square"></i>
     <i class="footer-icon fa-2x fas fa-envelope"></i>
     <p>© Copyright 2021 TinDog</p>
+    <p>Made by <a href="https://vk.com/hakkku">Danil Gorbunov</a></p>
 
   </footer>
-
 
 </body>
 
